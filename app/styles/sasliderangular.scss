@@ -1,0 +1,65 @@
+button:focus {outline:0;}
+
+.slider-container{
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  .slider-right-arrow {
+    //text-align: right;
+  }
+  .slider-right-arrow , .slider-left-arrow{
+    width: 5%;
+    height: 65px;
+    text-align: center;
+    margin-top: 30px;
+    border:0;
+    border-radius: 100%;
+  }
+  .disabledMove{
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  // .fade-in{
+  //   opacity: 1;
+  // }
+  // .fade-out{
+  //   opacity: 0;
+  // }
+  .slider-list{
+    width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-left: 0px;
+    .item{
+      list-style-type: none;
+      display: inline-block;
+      transition: all 0.5s linear;
+      img{
+        width: 195px;
+        height: 135px;
+      }
+    }
+    .move-left{
+      margin-left: -195px;
+    }
+    .move-right{
+      margin-left: 0px;
+    }
+    // .item.ng-hide {
+    //   opacity: 0;
+    // }
+    //
+    // .item.ng-hide-remove,
+    // .item.ng-hide-add {
+    //   display: inline-block !important;
+    // }
+    //
+    // .item.ng-hide-remove {
+    //   transition: all linear 1000ms;
+    // }
+    //
+    // .item.ng-hide-add {
+    //   transition: all linear 1000ms;
+    // }
+  }
+}

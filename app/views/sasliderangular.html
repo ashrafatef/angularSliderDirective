@@ -1,0 +1,21 @@
+<div class="slider-container">
+  <button type="button" class="slider-left-arrow slider-item"
+     ng-class="{'disabledMove':start <= 0}"
+     ng-click="move('left')"
+     ng-disabled="start <= 0">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </button>
+  <ul class="slider-list">
+    <li class="item" id="item{{$index}}" ng-repeat="item in data" >
+      <div>
+        <img ng-src="{{item.imageSrc}}" />
+      </div>
+    </li>
+  </ul>
+  <button type="button" class="slider-right-arrow slider-item"
+      ng-class="{'disabledMove':end  == data.length}"
+      ng-click="move('right')"
+      ng-disabled="end  == data.length">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+  </button>
+</div>
